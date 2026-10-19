@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#060b12">
+<meta name="description" content="WK Refrigeração — 10 anos de climatização, refrigeração e manutenção em Mineiros-GO.">
+<title>WK Refrigeração | 10 anos cuidando do seu frio</title>
+<link rel="icon" href="capasite.jpg">
+<style>
+:root{--bg:#060b12;--panel:#0e1a26;--blue:#13b8f3;--ice:#bfeaff;--white:#f6fbff;--muted:#9fb2c4;--line:#ffffff1c;--max:1160px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:85px}
+body{margin:0;background:var(--bg);color:var(--white);font:16px/1.65 Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
+body.locked{overflow:hidden}a{color:inherit;text-decoration:none}img{max-width:100%}
+.container{width:min(var(--max),calc(100% - 40px));margin:auto}
+.eyebrow{color:var(--blue);font-size:.75rem;font-weight:800;letter-spacing:.17em;text-transform:uppercase}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 20px;border-radius:9px;font-weight:800;transition:.2s;cursor:pointer}
+.btn:hover{transform:translateY(-2px)}.primary{background:var(--blue);color:#04111a;box-shadow:0 8px 26px #13b8f338}.outline{border:1px solid #ffffff40;background:#ffffff08}
+.section{padding:92px 0}.head{max-width:720px;margin-bottom:40px}
+h2{font-size:clamp(2rem,4vw,3.2rem);line-height:1.08;letter-spacing:-.04em;margin:13px 0}.head p,.about p{color:var(--muted)}
+header{position:sticky;top:0;z-index:50;background:#060b12e0;backdrop-filter:blur(18px);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0)}
+.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:11px}.brand img{width:52px;height:52px;border-radius:50%;object-fit:cover}
+.brand strong{display:block;letter-spacing:.07em;font-size:.95rem}.brand small{display:block;color:var(--blue);letter-spacing:.12em;font-size:.62rem}
+.links{display:flex;align-items:center;gap:25px;font-size:.9rem}.links a:hover{color:var(--blue)}.links .btn{color:#04111a}
+.toggle{display:none;background:transparent;color:#fff;border:1px solid var(--line);padding:8px 11px;border-radius:8px}.mobile{display:none}
+/* HERO */
+.hero{min-height:680px;display:flex;align-items:center;position:relative;isolation:isolate;overflow:hidden}
+.hero:before{content:"";position:absolute;inset:0;z-index:-2;background:radial-gradient(ellipse at 78% 38%,#0f5f86 0,#08202f 38%,var(--bg) 72%)}
+.hero-content{max-width:700px;padding:90px 0;position:relative;z-index:2}
+.hero h1{font-size:clamp(2.8rem,6.4vw,5.5rem);line-height:1;letter-spacing:-.06em;margin:20px 0}.hero h1 span{color:var(--blue)}
+.hero p{font-size:1.1rem;color:#d0dbe6;max-width:580px;margin:0 0 28px}.actions{display:flex;gap:12px;flex-wrap:wrap}
+.hero-logo{position:absolute;right:max(3vw,calc((100vw - var(--max))/2));top:50%;transform:translateY(-50%);width:min(40vw,460px);aspect-ratio:1;border-radius:50%;object-fit:cover;z-index:1;box-shadow:0 0 0 1px #13b8f333,0 0 90px #13b8f340;animation:float 6s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-52%)}}
+.proof{display:flex;flex-wrap:wrap;gap:18px;margin-top:34px;font-size:.87rem;color:#d5e2ed}.proof b{color:var(--blue)}
+.strip{background:#0a121b;border-block:1px solid var(--line)}.strip .container{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding:22px 0}
+.trust{display:flex;align-items:center;gap:13px}.ico{display:grid;place-items:center;width:46px;height:46px;flex:0 0 46px;border-radius:13px;color:var(--blue);background:#13b8f319;border:1px solid #13b8f333;font-size:1.3rem}
+.trust strong{display:block}.trust small{display:block;color:var(--muted);font-size:.8rem}
+/* IMPORTÂNCIA */
+.why{background:linear-gradient(#0a121b,#07101a)}
+.whygrid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.whygrid p{color:var(--muted)}.alert{margin-top:22px;padding:18px 20px;border-left:3px solid var(--blue);background:#13b8f312;border-radius:0 12px 12px 0;color:#d6e6f2}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:14px}.stat{padding:24px;border:1px solid var(--line);border-radius:16px;background:linear-gradient(145deg,#112030,#0b121b)}
+.stat b{display:block;font-size:2rem;color:var(--blue);line-height:1.1}.stat span{color:var(--muted);font-size:.9rem}
+/* CARDS DE MANUTENÇÃO */
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.card{border:1px solid var(--line);border-radius:18px;background:linear-gradient(160deg,#112030,#0a111a);overflow:hidden;transition:.3s;display:flex;flex-direction:column}
+.card:hover{transform:translateY(-6px);border-color:#13b8f36b;box-shadow:0 18px 40px #0008}
+.cover{position:relative;aspect-ratio:4/3;background:linear-gradient(135deg,#0f3b55,#08141f);overflow:hidden}
+.cover img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s}.card:hover .cover img{transform:scale(1.07)}
+.cover:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#0a111aee,transparent 55%)}
+.cover .tag{position:absolute;left:14px;bottom:12px;z-index:2;font-size:.7rem;font-weight:800;letter-spacing:.13em;text-transform:uppercase;color:var(--ice)}
+.cbody{padding:22px;display:flex;flex-direction:column;gap:10px;flex:1}.cbody h3{margin:0;font-size:1.12rem}.cbody p{margin:0;color:var(--muted);font-size:.92rem}
+.cbody ul{margin:2px 0 0;padding:0;list-style:none;display:grid;gap:6px;font-size:.88rem;color:#cfdeea}.cbody li:before{content:"❄";color:var(--blue);margin-right:8px;font-size:.75rem}
+.works{margin-top:26px;display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center;padding:28px 30px;border-radius:18px;border:1px solid #13b8f344;background:radial-gradient(ellipse at 100% 0,#0b8dc329,transparent 50%),linear-gradient(120deg,#101e2b,#0a121c)}
+.works h3{margin:6px 0 4px;font-size:1.5rem}.works p{margin:0;color:var(--muted)}
+/* SOBRE / CONTATO */
+.about{background:#08101a}.aboutgrid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.visual{border:1px solid var(--line);border-radius:22px;padding:34px;background:radial-gradient(circle,#12334a,#0b121b 68%);display:grid;place-items:center}
+.visual img{width:min(100%,330px);border-radius:50%;box-shadow:0 20px 50px #000a}
+.benefits{padding:0;list-style:none;display:grid;gap:12px;margin:24px 0}.benefits li:before{content:"✓";color:var(--blue);font-weight:900;margin-right:10px}
+.contactgrid{display:grid;grid-template-columns:.95fr 1.05fr;gap:35px}.contactgrid p{color:var(--muted)}
+.contactlist{display:grid;gap:12px;margin-top:22px}.contactrow{display:flex;align-items:center;gap:12px;padding:14px;border:1px solid var(--line);border-radius:12px;background:#0d1620}
+.contactrow strong{display:block;font-size:.9rem}.contactrow a,.contactrow span{font-size:.88rem;color:var(--muted);overflow-wrap:anywhere}
+.contactside{padding:28px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(145deg,#111f2d,#0b121b)}.contactside h3{margin:0}
+.hours{display:grid;gap:11px;margin:22px 0}.hours div{display:flex;justify-content:space-between;gap:12px;padding-bottom:10px;border-bottom:1px solid var(--line);font-size:.9rem}.hours span:last-child{color:var(--muted);text-align:right}
+footer{border-top:1px solid var(--line);background:#050910;padding:25px 0 calc(25px + env(safe-area-inset-bottom,0))}
+.foot{display:flex;align-items:center;justify-content:space-between;gap:18px;color:#8fa0b1;font-size:.82rem}.footbrand{display:flex;align-items:center;gap:9px;color:#fff;font-weight:800}.footbrand img{width:38px;border-radius:50%}
+.wa{position:fixed;right:20px;bottom:calc(20px + env(safe-area-inset-bottom,0));z-index:45;width:57px;height:57px;border-radius:50%;display:grid;place-items:center;background:#20c86b;color:#04150b;font-size:1.5rem;box-shadow:0 8px 28px #0007}
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .8s,transform .8s}.reveal.in{opacity:1;transform:none}
+
+/* ===== ABERTURA: NEVASCA (~3s) ===== */
+.intro{position:fixed;inset:0;z-index:9999;overflow:hidden;background:radial-gradient(ellipse at 50% 45%,#0b3550,#050c14 62%,#02060a);transition:opacity .7s,visibility .7s}
+.intro.done{opacity:0;visibility:hidden;pointer-events:none}
+.logo-wrap{position:absolute;inset:0;display:grid;place-items:center}
+.logo-wrap img{width:min(66vw,400px,62vh);aspect-ratio:1;object-fit:cover;border-radius:50%;opacity:0;transform:scale(1.12);filter:blur(26px) brightness(2.2) saturate(.2);will-change:filter,opacity,transform;box-shadow:0 0 120px #13b8f355}
+.frost{position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse at 50% 50%,#d9f3ffcc 0,#8fd3f066 38%,#1a6a9a33 75%);opacity:0}
+.flash{position:absolute;inset:0;pointer-events:none;background:linear-gradient(105deg,transparent 40%,#ffffffb0 50%,transparent 60%);transform:translateX(-120%);mix-blend-mode:screen}
+#snow{position:absolute;inset:0;width:100%;height:100%}
+.cap{position:absolute;left:0;right:0;bottom:11%;text-align:center;color:#bfeaff;font-size:.72rem;letter-spacing:.34em;text-transform:uppercase;opacity:0;transition:opacity .8s}
+.skip{position:absolute;right:18px;top:calc(16px + env(safe-area-inset-top,0));z-index:3;background:#ffffff14;color:#dff4ff;border:1px solid #ffffff30;border-radius:999px;padding:7px 14px;font-size:.78rem;cursor:pointer}
+@media(max-width:900px){.cards{grid-template-columns:repeat(2,1fr)}.hero-logo{opacity:.22;width:78vw;right:-14vw}.whygrid,.aboutgrid{grid-template-columns:1fr;gap:34px}}
+@media(max-width:850px){.links a:not(.btn){display:none}.contactgrid{grid-template-columns:1fr}}
+@media(max-width:650px){.container{width:calc(100% - 30px)}.nav{min-height:68px}.brand img{width:44px;height:44px}.brand strong{font-size:.8rem}.toggle{display:block}.links .btn{padding:9px 11px;font-size:.78rem}
+.mobile{position:absolute;top:100%;left:0;right:0;padding:10px 20px 18px;background:#080d14;border-bottom:1px solid var(--line)}.mobile.open{display:grid}.mobile a{padding:12px 0;border-bottom:1px solid var(--line)}
+.hero{min-height:620px}.proof{display:grid;gap:10px}.strip .container{grid-template-columns:1fr;gap:13px;padding:18px 0}.section{padding:70px 0}
+.cards{grid-template-columns:1fr}.works{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}.foot{align-items:flex-start;flex-direction:column}.wa{right:14px;width:53px;height:53px}.cap{font-size:.6rem;letter-spacing:.22em}}
+@media(prefers-reduced-motion:reduce){.hero-logo{animation:none}.reveal{opacity:1;transform:none;transition:none}}
+</style></head>
+<body class="locked">
+
+<div class="intro" id="intro" aria-label="Abertura WK Refrigeração">
+  <div class="logo-wrap"><img id="ilogo" src="capasite.jpg" alt="WK Refrigeração — 10 anos"></div>
+  <div class="frost" id="frost"></div><div class="flash" id="flash"></div>
+  <canvas id="snow"></canvas>
+  <div class="cap" id="cap">10 anos de confiança e cuidado</div>
+  <button class="skip" id="skip">Pular ›</button>
+</div>
+
+<header><div class="container nav">
+  <a class="brand" href="#inicio"><img src="capasite.jpg" alt="Logomarca WK Refrigeração"><span><strong>WK REFRIGERAÇÃO</strong><small>CLIMATIZAÇÃO &amp; MANUTENÇÃO</small></span></a>
+  <nav class="links"><a href="#inicio">Início</a><a href="#importancia">Por que manter</a><a href="#manutencao">Manutenções</a><a href="#sobre">Sobre</a><a href="#contato">Contato</a>
+  <a class="btn primary" href="https://wa.me/5564999621599?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento." target="_blank" rel="noopener">Pedir orçamento ↗</a></nav>
+  <button class="toggle" id="toggle" aria-label="Abrir menu" aria-expanded="false">☰</button></div>
+  <nav class="mobile" id="mobile"><a href="#inicio">Início</a><a href="#importancia">Por que manter</a><a href="#manutencao">Manutenções</a><a href="#sobre">Sobre a WK</a><a href="#contato">Contato</a></nav>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+  <img class="hero-logo" src="capasite.jpg" alt="WK Refrigeração 10 anos">
+  <div class="container"><div class="hero-content">
+    <span class="eyebrow">WK Refrigeração · Mineiros, GO</span>
+    <h1>Conforto na medida.<br><span>Frio de confiança.</span></h1>
+    <p>Há 10 anos cuidando de ar-condicionado, câmaras frias e equipamentos de refrigeração, com manutenção que evita o prejuízo antes dele aparecer.</p>
+    <div class="actions"><a class="btn primary" href="https://wa.me/5564999621599?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento." target="_blank" rel="noopener">❄ Solicitar orçamento</a><a class="btn outline" href="#importancia">Por que fazer manutenção ↓</a></div>
+    <div class="proof"><span><b>✓</b> Atendimento próximo</span><span><b>✓</b> Orientação clara</span><span><b>✓</b> 10 anos de marca</span></div>
+  </div></div>
+</section>
+<div class="strip"><div class="container">
+  <div class="trust"><div class="ico">❄</div><div><strong>Climatização</strong><small>Conforto e ar saudável</small></div></div>
+  <div class="trust"><div class="ico">⌁</div><div><strong>Refrigeração</strong><small>Câmaras frias e equipamentos</small></div></div>
+  <div class="trust"><div class="ico">♡</div><div><strong>Atendimento direto</strong><small>Fale com a equipe no WhatsApp</small></div></div>
+</div></div>
+
+<section class="section why" id="importancia"><div class="container whygrid">
+  <div class="reveal"><span class="eyebrow">A importância da manutenção</span>
+    <h2>Manutenção não é gasto. <span style="color:var(--blue)">É proteção.</span></h2>
+    <p>Equipamentos de refrigeração trabalham horas seguidas e acumulam sujeira, desgaste e perda de eficiência sem que a gente perceba. Quando a falha aparece, geralmente já vem com conta alta: aparelho parado, produto perdido ou ambiente sem conforto.</p>
+    <p>A manutenção preventiva identifica o problema cedo, mantém o equipamento no desempenho certo e prolonga sua vida útil.</p>
+    <div class="alert">Fazer a manutenção no tempo certo costuma sair muito mais barato do que consertar uma pane de emergência.</div></div>
+  <div class="stats reveal">
+    <div class="stat"><b>↓ Consumo</b><span>Equipamento limpo e regulado gasta menos energia.</span></div>
+    <div class="stat"><b>↑ Vida útil</b><span>Menos desgaste de compressor e componentes.</span></div>
+    <div class="stat"><b>♡ Saúde</b><span>Ar mais limpo, sem acúmulo de pó, fungos e bactérias.</span></div>
+    <div class="stat"><b>⛨ Segurança</b><span>Evita paradas, perdas de produtos e gastos inesperados.</span></div>
+  </div>
+</div></section>
+
+<section class="section" id="manutencao"><div class="container">
+  <div class="head reveal"><span class="eyebrow">Por que fazer cada manutenção</span><h2>Cada equipamento pede um cuidado.</h2><p>Entenda o que está em jogo em cada tipo de serviço e por que ele faz diferença no seu dia a dia.</p></div>
+  <div class="cards">
+    <article class="card reveal"><div class="cover"><img src="arlimpo.jpg" alt="Ar-condicionado limpo" onerror="this.remove()"><span class="tag">Ar-condicionado limpo</span></div>
+      <div class="cbody"><h3>Limpeza e higienização</h3><p>Manter o aparelho limpo garante ar saudável e desempenho de fábrica.</p><ul><li>Ar puro, sem fungos e ácaros</li><li>Refrigera melhor e gasta menos</li><li>Evita mau cheiro e goteiras</li></ul></div></article>
+    <article class="card reveal"><div class="cover"><img src="arsujo.jpg" alt="Ar-condicionado sujo" onerror="this.remove()"><span class="tag">O risco do ar sujo</span></div>
+      <div class="cbody"><h3>O que a sujeira causa</h3><p>Filtros e serpentina sujos sobrecarregam o aparelho e contaminam o ar que você respira.</p><ul><li>Alergias e problemas respiratórios</li><li>Conta de luz mais alta</li><li>Risco de quebra do compressor</li></ul></div></article>
+    <article class="card reveal"><div class="cover"><img src="camarafria.jpg" alt="Câmara fria" onerror="this.remove()"><span class="tag">Câmara fria</span></div>
+      <div class="cbody"><h3>Câmara fria sem surpresas</h3><p>Uma falha de temperatura pode significar toda a mercadoria perdida.</p><ul><li>Temperatura estável e segura</li><li>Preserva alimentos e produtos</li><li>Evita paradas e prejuízos</li></ul></div></article>
+    <article class="card reveal"><div class="cover"><img src="medicao.jpg" alt="Medição e diagnóstico" onerror="this.remove()"><span class="tag">Medição técnica</span></div>
+      <div class="cbody"><h3>Medição e diagnóstico</h3><p>Medir pressão, temperatura e corrente mostra o problema antes que ele cresça.</p><ul><li>Detecta vazamentos e desgastes</li><li>Confirma a carga correta de gás</li><li>Garante eficiência e segurança</li></ul></div></article>
+  </div>
+  <div class="works reveal"><div><span class="eyebrow">Nossos trabalhos</span><h3>Veja a WK em ação</h3><p>Instalações, manutenções e atendimentos realizados pela nossa equipe.</p></div>
+    <a class="btn outline" href="https://www.instagram.com/wk_refrigeracao" target="_blank" rel="noopener">Ver trabalhos ↗</a></div>
+</div></section>
+
+<section class="section about" id="sobre"><div class="container aboutgrid">
+  <div class="visual reveal"><img src="capasite.jpg" alt="Logomarca WK Refrigeração, 10 anos"></div>
+  <div class="reveal"><span class="eyebrow">Sobre a WK</span>
+    <h2>Dez anos valorizando o que importa: <span style="color:var(--blue)">confiança.</span></h2>
+    <p>A WK Refrigeração celebra uma trajetória de 10 anos. Nosso compromisso é oferecer atendimento atencioso e ajudar cada cliente a encontrar a solução certa para sua necessidade de refrigeração e climatização.</p>
+    <ul class="benefits"><li><strong>Atendimento transparente</strong> — explique o que precisa.</li><li><strong>Orientação clara</strong> — conheça as opções antes de decidir.</li><li><strong>Contato fácil</strong> — direto pelo WhatsApp ou telefone.</li></ul>
+    <a class="btn primary" href="#contato">Fale com a WK ↓</a></div>
+</div></section>
+
+<section class="section" id="contato"><div class="container contactgrid">
+  <div class="reveal"><span class="eyebrow">Contato</span><h2>Estamos a uma mensagem de distância.</h2><p>Tire dúvidas, verifique disponibilidade e solicite seu orçamento.</p>
+    <div class="contactlist">
+      <div class="contactrow"><div class="ico">☏</div><div><strong>Telefone e WhatsApp</strong><a href="https://wa.me/5564999621599" target="_blank" rel="noopener">(64) 99962-1599</a></div></div>
+      <div class="contactrow"><div class="ico">✉</div><div><strong>E-mail</strong><a href="mailto:wkrefrigeracao@outlook.com">wkrefrigeracao@outlook.com</a></div></div>
+      <div class="contactrow"><div class="ico">⌖</div><div><strong>Localização</strong><span>Rua 20, Quadra 32, Lote 02, Santa Isabel, Mineiros – GO</span></div></div></div></div>
+  <div class="contactside reveal"><h3>Horários de atendimento</h3><p>Confirme antes de se deslocar.</p>
+    <div class="hours"><div><span>Segunda a sexta</span><span>08h às 19h</span></div><div><span>Sábado</span><span>08h às 12h</span></div><div><span>Domingo</span><span>Consulte disponibilidade</span></div></div>
+    <a class="btn primary" style="width:100%" href="https://wa.me/5564999621599?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20manuten%C3%A7%C3%A3o." target="_blank" rel="noopener">Agendar manutenção ↗</a></div>
+</div></section>
+</main>
+
+<footer><div class="container foot"><div class="footbrand"><img src="capasite.jpg" alt="">WK REFRIGERAÇÃO</div><span>© <b id="year"></b> WK Refrigeração. Todos os direitos reservados.</span><a href="#inicio">Voltar ao topo ↑</a></div></footer>
+<a class="wa" href="https://wa.me/5564999621599?text=Ol%C3%A1%2C%20WK%20Refrigera%C3%A7%C3%A3o!" target="_blank" rel="noopener" aria-label="WhatsApp">✆</a>
+
+<script>
+(()=>{
+const body=document.body,intro=document.getElementById('intro'),cv=document.getElementById('snow'),ctx=cv.getContext('2d'),
+logo=document.getElementById('ilogo'),frost=document.getElementById('frost'),flash=document.getElementById('flash'),cap=document.getElementById('cap');
+document.getElementById('year').textContent=new Date().getFullYear();
+const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
+let finished=false;
+function end(){if(finished)return;finished=true;intro.classList.add('done');body.classList.remove('locked');setTimeout(()=>intro.remove(),900)}
+document.getElementById('skip').onclick=end;
+
+if(reduced){end()}else{
+ const DUR=3200;let W,H,dpr=Math.min(devicePixelRatio||1,2);
+ function size(){W=innerWidth;H=innerHeight;cv.width=W*dpr;cv.height=H*dpr;ctx.setTransform(dpr,0,0,dpr,0,0)}
+ size();addEventListener('resize',size);
+ const N=W<700?170:320,P=[];
+ for(let i=0;i<N;i++){const z=Math.random();P.push({x:Math.random()*W*1.4-W*.2,y:Math.random()*H,z,
+  r:1+z*z*(W<700?7:11),vy:60+z*320+Math.random()*60,vx:120+z*520,ph:Math.random()*6.28,
+  rot:Math.random()*6.28,vr:(Math.random()-.5)*3,crys:z>.62&&Math.random()>.35})}
+ function crystal(r){ctx.beginPath();for(let k=0;k<6;k++){const a=k*Math.PI/3;ctx.moveTo(0,0);ctx.lineTo(Math.cos(a)*r,Math.sin(a)*r);
+  const bx=Math.cos(a)*r*.6,by=Math.sin(a)*r*.6;for(const s of[-1,1]){const b=a+s*.7;ctx.moveTo(bx,by);ctx.lineTo(bx+Math.cos(b)*r*.35,by+Math.sin(b)*r*.35)}}ctx.stroke()}
+ const ease=t=>1-Math.pow(1-t,3),clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
+ let t0=null,last=0;
+ function frame(ts){
+  if(finished)return;if(t0===null){t0=ts;last=ts}
+  const t=ts-t0,dt=Math.min((ts-last)/1000,.05);last=ts;
+  // intensidade da nevasca: sobe rápido, pico, depois abre para revelar a logo
+  const inten=t<700?t/700:t<1700?1:clamp(1-(t-1700)/1500,.12,1);
+  ctx.clearRect(0,0,W,H);
+  const wind=(Math.sin(t/380)*.25+1)*inten;
+  for(const p of P){
+   p.x+=p.vx*wind*dt+Math.sin(t/300+p.ph)*20*dt*p.z;p.y+=p.vy*dt;p.rot+=p.vr*dt;
+   if(p.y>H+20||p.x>W+40){p.y=-20-Math.random()*60;p.x=Math.random()*W*1.2-W*.35}
+   const a=(.25+p.z*.75)*clamp(inten*1.2,0,1);if(a<.03)continue;
+   ctx.globalAlpha=a;
+   if(p.crys){ctx.save();ctx.translate(p.x,p.y);ctx.rotate(p.rot);ctx.strokeStyle='#e8f8ff';ctx.lineWidth=1+p.z;ctx.shadowColor='#7fd8ff';ctx.shadowBlur=8;crystal(p.r);ctx.restore()}
+   else if(p.z>.45){ctx.strokeStyle='#d8f2ff';ctx.lineWidth=p.r*.5;ctx.beginPath();ctx.moveTo(p.x,p.y);ctx.lineTo(p.x-p.vx*.035*wind,p.y-p.vy*.035);ctx.stroke()}
+   else{ctx.fillStyle='#f2fbff';ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,6.283);ctx.fill()}
+  }
+  ctx.globalAlpha=1;
+  // a logo se forma por trás: sai do gelo (desfoque + brilho) e cristaliza em foco
+  const q=ease(clamp((t-350)/2300,0,1));
+  logo.style.opacity=clamp(q*1.4,0,1);
+  logo.style.transform='scale('+(1.12-.12*q)+')';
+  logo.style.filter='blur('+(26*(1-q)).toFixed(1)+'px) brightness('+(1+1.2*(1-q)).toFixed(2)+') saturate('+(.2+.8*q).toFixed(2)+')';
+  // névoa gelada: cobre no pico e abre
+  frost.style.opacity=(inten>=1?.55:inten*.55)*(1-q*.8);
+  // reflexo de brilho no final
+  const f=clamp((t-2300)/700,0,1);flash.style.transform='translateX('+(-120+f*240)+'%)';
+  if(t>1900)cap.style.opacity=.9;
+  if(t>=DUR){end();return}
+  requestAnimationFrame(frame);
+ }
+ requestAnimationFrame(frame);
+ logo.addEventListener('error',()=>{logo.style.display='none'});
+}
+
+// menu mobile
+const tg=document.getElementById('toggle'),mb=document.getElementById('mobile');
+tg.onclick=()=>{const o=mb.classList.toggle('open');tg.setAttribute('aria-expanded',o);tg.textContent=o?'✕':'☰'};
+mb.querySelectorAll('a').forEach(a=>a.onclick=()=>{mb.classList.remove('open');tg.textContent='☰'});
+// revelar ao rolar
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+})();
+</script>
+</body></html>
